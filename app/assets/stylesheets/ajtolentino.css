@@ -240,7 +240,21 @@ section {
 .about-pic{
     margin-bottom: 2rem;
 }
-
+.section__pic-container {
+    border-radius: 70px;
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin: auto;
+    background-size: cover;
+    background-position: center;
+}
+.section__pic-containers {
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin: auto;
+}
 
 .section__pic-container img {
     border-radius: 70px;
