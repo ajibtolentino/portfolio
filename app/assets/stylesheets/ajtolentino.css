@@ -256,7 +256,7 @@ section {
     margin: auto;
 }
 
-.section__pic-container img {
+.section__pic--container img {
     border-radius: 70px;
     display: flex;
     height: 400px;
