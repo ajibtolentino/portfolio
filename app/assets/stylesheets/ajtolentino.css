@@ -241,7 +241,6 @@ section {
     margin-bottom: 2rem;
 }
 .section__pic-container {
-    background-image: url('/assets/meorig.jpg');
     border-radius: 70px;
     display: flex;
     height: 400px;
@@ -261,7 +260,6 @@ section {
 }
 
 .section__pic-container img {
-    background-image: url('/assets/meorig.jpg');
     border-radius: 70px;
     display: flex;
     height: 400px;
