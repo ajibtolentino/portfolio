@@ -249,7 +249,7 @@ section {
     margin: auto;
     background-size: cover;
     background-position: center;
-    box-shadow: 0 5px 5px 5px rgb(211, 211,0 211,0.6);
+    box-shadow: 0 5px 5px 5px rgb(211, 211,0 ,0.6);
     animation: animate 5s ease-in-out infinite;
     transition: all 1s ease-in-out;
 }
