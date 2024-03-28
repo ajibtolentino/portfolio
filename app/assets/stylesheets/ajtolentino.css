@@ -260,6 +260,11 @@ section {
     margin: auto;
 }
 
+.section__pic-container img {
+    width: 100%;
+    height: auto; 
+}
+
 .section__text {
     align-self: center;
     text-align: center;
