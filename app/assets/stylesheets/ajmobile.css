@@ -68,10 +68,6 @@
     article {
         font-size: 1rem;
     }
-    .section__pic-container {
-        max-width: 500px; /* Reduce the maximum width for smaller screens */
-        max-height: 500px;
-    }
 
     .section__pic-container img {
         max-width: 500px; /* Reduce the maximum width for smaller screens */
