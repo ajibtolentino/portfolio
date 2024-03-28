@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <%= stylesheet_link_tag 'application', 'ajtolentino', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= stylesheet_link_tag 'application', 'ajmobile', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= csrf_meta_tags %>
+  <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+          
+</head>
+<body>
+  <nav id="desktop-nav">
+    <div class="logo"><a href="/ajtolentino">AJ Tolentino</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li> <button id="toggleButton" onclick="darkMode()">
+        <img id="toggleImage" src="assets/dark.png" alt="Toggle">
+        </button></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="ham-nav">
+    <div class="logo">AJ Tolentino</div>
+    <div class="ham-menu">
+        <div class="ham-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+        </div>
+        <div class="menu-links">
+            <li><a href="#about"onclick="toggleMenu()">About</a></li>
+            <li><a href="#projects"onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact"onclick="toggleMenu()">Contact</a></li>
+            <li> <button id="toggleButton" onclick="darkMode()">
+        <img id="toggleImage" src="assets/dark.png" alt="Toggle">
+        </button></li>
+    </div>
+    </div>
+            
+  </nav>
+  <section id="me">
+    <div class="section__pic-container">
+   
+    </div>
+    <div class="section__text">
+    <p class="section__text__p1">Hello, I'm</p>
+    <h1 class="title">AJ Tolentino</h1>
+    <p class="section__text__p2"><span class="highlight"></span></p>
+    <div class="btn-container">
+        <button class="btn btn-color-2"onclick="window.open('')">Download CV</button>
+        <button class="btn btn-color-1" onclick="location.href='#contact'">Contact</button>
+
+
+
+        </div>
+        <div id="socials-container">
+            <img src="/assets/linkedin.png" alt="linkedin" class="icon" onclick="location.href='https://linkedin.com/'">
+            <img src="/assets/github.png" alt="github" class="icon" onclick="location.href='https://github.com/'">
+          
+        </div>
+        <div class="about__skills">
+          <h3 class="about__skills-title">My Skills</h3>
+        <div class="lang">
+
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original-wordmark.svg" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ruby/ruby-original-wordmark.svg" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-plain.svg" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/androidstudio/androidstudio-original.svg" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apache/apache-original.svg" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original-wordmark.svg" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rails/rails-original-wordmark.svg" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original-wordmark.svg" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" />
+          
+        </div>
+        </div>
+    </div>
+  </section>
+  <section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+    <div class="section__pic-containers">
+        <img src="./assets/me2.JPG" alt="Profile Pic" class="about-pic"/>
+      </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+          <img src="./assets/book.png" alt"Experience Icon" class="icon">
+          <h3>Experience</h3>
+          <p> 2+ years<br> Software Development</p>
+          </div>
+          <div class="details-container">
+          <img src="./assets/hat.png" alt"Education Icon" class="icon">
+          <h3>Education</h3>
+          <p> MAPUA University <br>BS Computer Science</p>
+          </div>
+          </div>
+          <div class="text-cotainer">
+          <p>
+          Hi there! 👋 My name is AJ Tolentino.
+
+I'm currently pursuing my studies at MAPUA University, where I'm diving deep into the world of technology and engineering. Passionate about learning and exploring new horizons, I'm always eager to take on challenges and expand my knowledge.
+
+Outside of academia, you'll often find me tinkering with code, exploring the latest developments in technology, or simply enjoying the outdoors. I believe in the power of continuous learning and strive to make every day an opportunity for growth and discovery.
+
+Let's connect and embark on this journey together!
+          </p>
+          </div>
+      </div
+      </div>
+      <img src="./assets/adown.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#projects'">
+      </section>
+      <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects </h1>
+        <div id="project">
+        <div class="project-container">
+          <div class="work-list">
+          <div class="work">
+            <img src="./assets/proj1.jpg">
+            <div class="layer">
+              <h3>Social Media App</h3>
+              <p>The app connects you to the people around the world.</p>
+              <a href="#"><i class="fa-solid fa-link"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="./assets/proj2.jpg">
+            <div class="layer">
+              <h3>Social Media App</h3>
+              <p>The app connects you to the people around the world.</p>
+              <div class="btn-container">
+                <button class="btn btn-color-3 project-btn" onclick="location.href='https://github.com/'">Github</button>
+                <button class="btn btn-color-3 project-btn" onclick="location.href='https://github.com/'">Link Demo</button>
+              </div>
+            </div>
+          </div>
+          <div class="work">
+            <img src="./assets/proj3.jpg">
+            <div class="layer">
+              <h3>Social Media App</h3>
+              <p>The app connects you to the people around the world.</p>
+              <a href="#"><i class="fa-solid fa-link"></i></a>
+            </div>
+          </div>
+          </div>
+          <button class="sbtn" onclick="location.href='https://github.com/'">See More</button>
+        </div>
+        </div>
+
+      </section>
+      <section id="contact">
+      <div id="contacts">
+        <div class="contacts-container">
+          <div class="contacts-row">
+            <div class="contact-left">
+              <h1 class="title">Contact Me</h1>
+              <p><img src="/assets/email.png" alt="email" class="icon"> ajibtolentino@outlook.com</p>
+              <p><img src="/assets/phone.png" alt="phone" class="icon"> 09062887154</p>
+              <div class="social-icons">
+              <img src="/assets/facebook.png" alt="facebook" class="icon" onclick="location.href='https://linkedin.com/'">
+              <img src="/assets/instagram.png" alt="instagram" class="icon" onclick="location.href='https://github.com/'">
+              <img src="/assets/linkedin.png" alt="linkedin" class="icon" onclick="location.href='https://github.com/'">
+              </div>
+              <button class="btn btn-color-4"onclick="window.open('')">Download CV</button>
+            </div>
+            <div class="contact-right">
+              <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="Email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button class="sbtn" type="submit">Submit</button>
+              </form>
+              <span id="msg"></span>
+            </div>
+          </div>
+        </div>
+       
+      </div>
+      </section>
+      <footer class="copyright">
+      <p class="copyright-p"> Copyright © AJ </p>
+      </footer>
+            <script>
+            function toggleMenu(){
+                const menu = document.querySelector(".menu-links");
+                const icon = document.querySelector(".ham-icon");
+                menu.classList.toggle("open");
+                icon.classList.toggle("open");
+                }
+            function darkMode(){
+                var element = document.body;
+                element.classList.toggle("dark-mode");
+    var img = document.getElementById("toggleImage");
+    if (element.classList.contains("dark-mode")) {
+        img.src = "assets/light.png"; // Change to light mode image
+    } else {
+        img.src = "assets/dark.png"; // Change to dark mode image
+    }
+    var img = document.querySelector(".menu-links img");
+
+if (element.classList.contains("dark-mode")) {
+    img.src = "assets/light.png"; // Change to light mode image
+} else {
+    img.src = "assets/dark.png"; // Change to dark mode image
+}
+
+            }
+            </script>
+            <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbzOD9SCnSfCr_tp4uw50JHodMtyC8Ck0xHNQ46Otv0BJFELTMHKCrt_lvGWjVbGAUcTCA/exec';
+            const form = document.forms['submit-to-google-sheet'];
+            const msg = document.getElementById("msg");
+            
+            form.addEventListener('submit', e => {
+              e.preventDefault();
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                  msg.innerHTML = "Message was sent successfully! <br> Thank you for contacting me!";
+                  setTimeout(function() {
+                    msg.innerHTML = "";
+                  }, 5000);
+                  form.reset();
+                })
+                .catch(error => console.error('Error!', error.message));
+            });
+            
+</script>
+</body>
+</html>
