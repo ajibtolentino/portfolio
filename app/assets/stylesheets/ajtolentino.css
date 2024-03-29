@@ -245,7 +245,7 @@ section {
     border-radius: 5rem;
     width: 100%; /* Ensure the image takes full width */
     height: auto; /* Ensure the image scales proportionally */
-    max-width: 400px;
+     max-width: 400px;
 }
 .section__pic-container {
     border-radius: 70px;
@@ -261,11 +261,6 @@ section {
     height: 400px;
     width: 400px;
     margin: auto;
-}
-.about-pic-container,
-.section__pic-containers {
-    justify-content: center; /* Add justify-content */
-    align-items: center;
 }
 
 .section__pic--container img {
