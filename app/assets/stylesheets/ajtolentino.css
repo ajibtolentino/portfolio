@@ -223,7 +223,7 @@ section {
     padding-top: 4vh;
     padding-bottom: 4vh;
     height: auto;
-    margin: 0 10rem;
+    margin: 0 2rem;
     box-sizing: border-box;
     min-height: fit-content;
 }
@@ -469,10 +469,10 @@ section {
 
 #about{
     position:relative;
-    padding-top: 4vh;
-    padding-bottom: 4vh;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     height: auto;
-    margin: 0 10rem;
+    margin: 0 2rem;
 }
 
 .about-containers {
