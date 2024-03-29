@@ -44,52 +44,53 @@
     </div>
             
   </nav>
-  <section id="me">
-    <div class="section__pic--container">
-    <%= image_tag("meorig.jpg", alt: "Profile Picture", class: "about-pic") %>
-    </div>
-    <div class="section__text">
-    <p class="section__text__p1">Hello, I'm</p>
-    <h1 class="title">AJ Tolentino</h1>
-    <p class="section__text__p2"><span class="highlight"></span></p>
-    <div class="btn-container">
-        <button class="btn btn-color-2"onclick="window.open('')">Download CV</button>
-        <button class="btn btn-color-1" onclick="location.href='#contact'">Contact</button>
+  <section id="me" class="container">
+  <div class="row">
+      <div class="col-lg-6 order-lg-1 order-2">
+          <div class="section__pic--container">
+              <%= image_tag("meorig.jpg", alt: "Profile Picture", class: "about-pic") %>
+          </div>
+      </div>
+      <div class="col-lg-6 order-lg-2 order-1">
+          <div class="section__text">
+              <p class="section__text__p1">Hello, I'm</p>
+              <h1 class="title">AJ Tolentino</h1>
+              <p class="section__text__p2"><span class="highlight"></span></p>
+              <div class="btn-container">
+                  <button class="btn btn-color-2" onclick="window.open('')">Download CV</button>
+                  <button class="btn btn-color-1" onclick="location.href='#contact'">Contact</button>
+              </div>
+              <div id="socials-container">
+                  <%= image_tag "linkedin.png", alt: "linkedin", class: "icon", onclick: "location.href='https://www.linkedin.com/in/ajibtolentino/'" %>
+                  <%= image_tag "github.png", alt: "github", class: "icon", onclick: "location.href='https://github.com/ajibtolentino'" %>
+              </div>
+              <div class="about__skills">
+                  <h3 class="about__skills-title">My Skills</h3>
+                  <div class="lang">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original-wordmark.svg" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ruby/ruby-original-wordmark.svg" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-plain.svg" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/androidstudio/androidstudio-original.svg" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apache/apache-original.svg" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original-wordmark.svg" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rails/rails-original-wordmark.svg" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original-wordmark.svg" />
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" />
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
 
-
-
-        </div>
-        <div id="socials-container">
-        <%= image_tag "linkedin.png", alt: "linkedin", class: "icon", onclick: "location.href='https://www.linkedin.com/in/ajibtolentino/'" %>
-        <%= image_tag "github.png", alt: "github", class: "icon", onclick: "location.href='https://github.com/ajibtolentino'" %>
-          
-        </div>
-        <div class="about__skills">
-          <h3 class="about__skills-title">My Skills</h3>
-        <div class="lang">
-
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original-wordmark.svg" />
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg" />
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ruby/ruby-original-wordmark.svg" />
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg" />
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg" />
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" />
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-plain.svg" />
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg" />
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg" />
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg" />
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" />
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/androidstudio/androidstudio-original.svg" />
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apache/apache-original.svg" />
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original-wordmark.svg" />
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rails/rails-original-wordmark.svg" />
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original-wordmark.svg" />
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" />
-          
-        </div>
-        </div>
-    </div>
-  </section>
   <section id="about">
     <p class="section__text__p1">Get To Know More</p>
     <h1 class="title">About Me</h1>
