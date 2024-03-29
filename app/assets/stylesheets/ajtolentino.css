@@ -234,18 +234,13 @@ section {
 
 #me {
     display: flex;
-    justify-content: center;
     align-items: center;
-    min-height: 80vh;
+    justify-content: center;
     gap: 5rem;
-    height: 80vh;
+    min-height: 80vh;
 }
 .about-pic{
     margin-bottom: 2rem;
-    border-radius: 5rem;
-    width: 100%; /* Ensure the image takes full width */
-    height: auto; /* Ensure the image scales proportionally */
-     max-width: 400px;
 }
 .section__pic-container {
     border-radius: 70px;
@@ -365,9 +360,6 @@ section {
     text-align: center;
 }
 
-.text-container{
-    flex: 1;
-}
 /* Socials container styles */
 #socials-container {
     display: flex;
@@ -478,34 +470,28 @@ section {
 #about{
     position:relative;
     padding-top: 4vh;
-    padding-bottom: 4vh; 
-    height: auto; 
+    padding-bottom: 4vh;
+    height: auto;
     margin: 0 10rem;
-    box-sizing: border-box;
-    min-height: fit-content;
 }
 
 .about-containers {
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    flex-direction: column;
     gap: 2rem;
     margin-bottom: 2rem;
     margin-top: 2rem;
 }
 .about-details-containers{
-    display: flex;
     justify-content: center;
-    gap: 2rem;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
+    flex-direction: column;
 }
 .about-containers, .about-details-containers{
     display: flex;
 
 }
 
+.about-pic{
+    border-radius: 5rem;
+}
 .arrow{
     position: absolute;
     right: -5rem;
