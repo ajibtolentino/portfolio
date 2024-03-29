@@ -9,7 +9,7 @@
     .about__skills{
         flex-wrap: wrap
         margin 0 auto;
-        margin-bottom: 15rem;
+        margin-bottom: 1rem;
     }
     
 }
@@ -23,7 +23,7 @@
         display: flex;
     }
     .section__text{
-        margin-top: 1rem;
+        margin-top: 3rem;
     }
     #experience, .experience-details-container{
         margin-top: 2rem;
