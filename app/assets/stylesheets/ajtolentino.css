@@ -525,7 +525,7 @@ section {
     overflow: hidden;
 }
 .work img {
-    height: 100%;
+    height: 30rem;
     width: 100%;
     object-fit: cover;
     border-radius: 10px;
