@@ -221,7 +221,8 @@ body {
 /* Section styles */
 section {
     padding-top: 4vh;
-    height: 96vh;
+    padding-bottom: 4vh;
+    height: auto;
     margin: 0 10rem;
     box-sizing: border-box;
     min-height: fit-content;
@@ -234,11 +235,17 @@ section {
 #me {
     display: flex;
     justify-content: center;
+    align-items: center;
+    min-height: 80vh;
     gap: 5rem;
     height: 80vh;
 }
 .about-pic{
     margin-bottom: 2rem;
+    border-radius: 5rem;
+    width: 100%; /* Ensure the image takes full width */
+    height: auto; /* Ensure the image scales proportionally */
+    max-width: 400px;
 }
 .section__pic-container {
     border-radius: 70px;
@@ -254,6 +261,11 @@ section {
     height: 400px;
     width: 400px;
     margin: auto;
+}
+.about-pic-container,
+.section__pic-containers {
+    justify-content: center; /* Add justify-content */
+    align-items: center;
 }
 
 .section__pic--container img {
@@ -358,6 +370,9 @@ section {
     text-align: center;
 }
 
+.text-container{
+    flex: 1;
+}
 /* Socials container styles */
 #socials-container {
     display: flex;
@@ -467,25 +482,36 @@ section {
 
 #about{
     position:relative;
+    padding-top: 4vh;
+    padding-bottom: 4vh; 
+    height: auto; 
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
 }
 
 .about-containers {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
     gap: 2rem;
     margin-bottom: 2rem;
     margin-top: 2rem;
 }
 .about-details-containers{
+    display: flex;
     justify-content: center;
-    flex-direction: column;
+    align-items: center;  
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
 }
 .about-containers, .about-details-containers{
     display: flex;
 
 }
 
-.about-pic{
-    border-radius: 5rem;
-}
 .arrow{
     position: absolute;
     right: -5rem;
