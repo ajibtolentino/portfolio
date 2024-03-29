@@ -366,6 +366,7 @@ section {
     justify-content: center;
     margin-top: 1rem;
     gap: 1rem;
+    margin-left: 2rem;
 }
 #socials-container img:hover{
     transform: translateY(-5px);
