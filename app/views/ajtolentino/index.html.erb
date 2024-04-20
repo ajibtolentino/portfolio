@@ -57,7 +57,9 @@
               <h1 class="title">AJ Tolentino</h1>
               <p class="section__text__p2"><span class="highlight"></span></p>
               <div class="btn-container">
-                  <button class="btn btn-color-2" onclick="downloadPdf()">Download CV</button>
+              <a href="/assets/ajresume.pdf" download="ajresume.pdf">
+              <button class="btn btn-color-2">Download CV</button>
+            </a>            
                   <button class="btn btn-color-1" onclick="location.href='#contact'">Contact</button>
               </div>
               <div id="socials-container">
@@ -242,30 +244,6 @@
                 })
                 .catch(error => console.error('Error!', error.message));
             });
-            
-</script>
-<script>
-function downloadPdf() {
-  // Construct the file URL
-  var fileUrl = '/app/assets/ajresume.pdf';
-  
-  // Create a temporary anchor element
-  var a = document.createElement('a');
-  a.href = fileUrl;
-  
-  // Set the file name for the download
-  a.download = 'ajresume.pdf';
-  
-  // Append the anchor element to the body
-  document.body.appendChild(a);
-  
-  // Trigger a click event to initiate the download
-  a.click();
-  
-  // Remove the anchor element from the body
-  document.body.removeChild(a);
-}
-</script>
 
 </body>
 </html>
