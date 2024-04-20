@@ -57,7 +57,7 @@
               <h1 class="title">AJ Tolentino</h1>
               <p class="section__text__p2"><span class="highlight"></span></p>
               <div class="btn-container">
-                  <button class="btn btn-color-2" onclick="window.location.href='<%= download_cv_home_index_path %>'">Download CV</button>
+                  <button class="btn btn-color-2" onclick="downloadPdf()">Download CV</button>
                   <button class="btn btn-color-1" onclick="location.href='#contact'">Contact</button>
               </div>
               <div id="socials-container">
@@ -179,7 +179,7 @@
             <div class="contact-left">
               <h1 class="title">Contact Me</h1>
 <div class="social-icons" style="text-align:center">
-  <button class="btn btn-color-4" onclick="window.location.href='<%= download_cv_home_index_path %>'">Download CV</button>
+  <button class="btn btn-color-4"onclick="window.open('./assets/ajresume.pdf')">Download CV</button>
 </div>
             </div>
             <div class="contact-right">
@@ -244,5 +244,28 @@
             });
             
 </script>
+<script>
+function downloadPdf() {
+  // Construct the file URL
+  var fileUrl = '<%= asset_path("ajresume.pdf") %>';
+  
+  // Create a temporary anchor element
+  var a = document.createElement('a');
+  a.href = fileUrl;
+  
+  // Set the file name for the download
+  a.download = 'ajresume.pdf';
+  
+  // Append the anchor element to the body
+  document.body.appendChild(a);
+  
+  // Trigger a click event to initiate the download
+  a.click();
+  
+  // Remove the anchor element from the body
+  document.body.removeChild(a);
+}
+</script>
+
 </body>
 </html>
