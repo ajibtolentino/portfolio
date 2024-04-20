@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   get 'ajtolentino/index'
   get 'home/index'
   get '/ajtolentino', to: 'ajtolentino#index'
-
+  get 'download_cv', to: 'cv#download'
   # Set your own root route
   root 'ajtolentino#index'
 
